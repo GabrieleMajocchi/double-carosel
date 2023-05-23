@@ -1,0 +1,115 @@
+body{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+main{
+    background-color: white;
+    color: #001632;
+    /* border-radius: 1rem; */
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 6rem auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+div.carousel{
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+div.infopre-button,
+div.infonext-button{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    font-size: 1.4rem;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+}
+
+div.infopre-button i,
+div.infonext-button i{
+    margin: auto;
+}
+
+div.infopre-button:hover,
+div.infonext-button:hover{
+    background-color: rgb(66, 66, 66);
+    color: rgb(255, 255, 255);
+}
+
+
+div.infopre-button{
+    top: .5rem;
+}
+
+div.infonext-button{
+    bottom: .5rem;
+}
+
+    div.previous-button,
+    div.next-button{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        font-size: 1.4rem;
+        background-color: white;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        display: flex;
+        cursor: pointer;
+    }
+
+    div.previous-button i,
+    div.next-button i{
+        margin: auto;
+    }
+
+    div.previous-button:hover,
+    div.next-button:hover{
+        background-color: rgb(66, 66, 66);
+        color: rgb(255, 255, 255);
+    }
+
+
+    div.previous-button{
+        left: .5rem;
+    }
+
+    div.next-button{
+        right: .5rem;
+    }
+
+div.carousel-group0, div.carousel-group1, div.carousel-group2{
+    display: none;
+    height: 100%;
+} 
+
+.carousel-item{
+    display: none;
+    height: 100%;
+}
+
+div.carousel-group0.active, div.carousel-group1.active, div.carousel-group2.active{
+    display: block;
+}
+
+.carousel-item.active{
+    display: block;
+}
+
+main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
