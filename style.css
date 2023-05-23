@@ -92,19 +92,25 @@ div.infonext-button{
 div.carousel-group0, div.carousel-group1, div.carousel-group2{
     display: none;
     height: 100%;
+    opacity: 0;
 } 
 
 .carousel-item{
     display: none;
     height: 100%;
+    opacity: 0;
 }
 
 div.carousel-group0.active, div.carousel-group1.active, div.carousel-group2.active{
     display: block;
+    opacity: 1;
+    transition: opacity 3s;
 }
 
 .carousel-item.active{
     display: block;
+    opacity: 1;
+    transition: opacity 3s;
 }
 
 main img{
